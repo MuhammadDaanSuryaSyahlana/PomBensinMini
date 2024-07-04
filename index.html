@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>POM Bensin Mini</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Selamat Datang di POM Bensin Mini</h1>
+    <form id="formTransaksi" method="POST" action="simpan_transaksi.php">
+            <label for="name">Nama:</label>
+            <input type="text" id="name" name="name" required>
+            <br>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <br>
+            <label for="jenisBahanBakar">Jenis Bahan Bakar:</label>
+        <select id="jenisBahanBakar" name="jenisBahanBakar">
+            <option value="Premium">Premium</option>
+            <option value="Pertamax">Pertamax</option>
+            <option value="Pertalite">Pertalite</option>
+        </select><br><br>
+            <label for="jumlah_liter">Jumlah (liter):</label>
+            <input type="number" id="jumlah_liter" name="jumlah_liter" required>
+            <br>
+            <label for="harga_liter">Harga (per liter):</label>
+            <input type="number" id="harga_liter" name="harga_liter" required>
+            <br>
+            <label for="total_harga">Total Harga:</label>
+            <input type="number" id="total_harga" name="total_harga" required>
+            <br>
+            <label for="waktu">Waktu Pesan:</label>
+            <input type="datetime-local" id="waktu" name="waktu" required>
+            <br>
+            <input type="submit" value="Kirim">
+        </form>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
